@@ -1,6 +1,3 @@
-# Printer-Troubleshooter
-A printer troubleshooter that can be use for checking your printers,
-
 Automated Printer Troubleshooter
 
 A modern PowerShell-based Windows Forms application for diagnosing and repairing common printer problems automatically.
