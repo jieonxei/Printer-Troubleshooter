@@ -1,6 +1,6 @@
 # Automated Printer Troubleshooter
 
-A modern PowerShell-based Windows Forms application for diagnosing and repairing common printer problems automatically.
+A PowerShell-based Windows Forms application for diagnosing and repairing common printer problems automatically.
 
 This tool provides an interactive GUI for IT helpdesk technicians and system administrators, including an integrated local AI assistant powered by Ollama + Llama 3.
 
