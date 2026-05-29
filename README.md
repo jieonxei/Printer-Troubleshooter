@@ -201,4 +201,5 @@ MIT License
 
 # Author
 
-Developed for IT helpdesk automation and printer troubleshooting workflows.
+* jieonxei - Developer 
+ (https://github.com/jieonxei)
