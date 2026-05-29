@@ -1,86 +1,150 @@
-Automated Printer Troubleshooter
+# Automated Printer Troubleshooter
 
 A modern PowerShell-based Windows Forms application for diagnosing and repairing common printer problems automatically.
+
 This tool provides an interactive GUI for IT helpdesk technicians and system administrators, including an integrated local AI assistant powered by Ollama + Llama 3.
 
-for testing run the: 
-RunPrinterTroubleshooter.vbs
+---
 
-Features:
-Automatic printer discovery
-Print queue monitoring
-Restart Print Spooler service
-Clear stuck print jobs
-Network connectivity testing
-Full automated printer diagnostics
-Integrated AI helpdesk assistant
-Local AI analysis using Ollama + Llama 3
-Real-time logging console
-Progress indicators and status updates
-Technologies Used
-PowerShell
-Windows Forms (.NET)
-Ollama
-Llama 3
-Windows PrintManagement module
-Screenshots
-Main Dashboard
-Printer selection
-Diagnostic controls
-Live logs
-AI assistant panel
-Requirements
-Windows
-Windows 10/11
-PowerShell 5.1 or later
-Required PowerShell Modules
+# Features
+
+* Automatic printer discovery
+* Print queue monitoring
+* Restart Print Spooler service
+* Clear stuck print jobs
+* Network connectivity testing
+* Full automated printer diagnostics
+* Integrated AI helpdesk assistant
+* Local AI analysis using Ollama + Llama 3
+* Real-time logging console
+* Progress indicators and status updates
+
+---
+
+# Technologies Used
+
+* PowerShell
+* Windows Forms (.NET)
+* Ollama
+* Llama 3
+* Windows PrintManagement module
+
+---
+
+# Screenshots
+
+## Main Dashboard
+
+* Printer selection
+* Diagnostic controls
+* Live logs
+* AI assistant panel
+
+> Add screenshots inside the `/assets` folder and link them here.
+
+Example:
+
+```md
+![Dashboard](assets/dashboard.png)
+```
+
+---
+
+# Requirements
+
+## Windows
+
+* Windows 10 / 11
+* PowerShell 5.1 or later
+
+---
+
+# Required PowerShell Module
 
 The following module must be available:
 
+```powershell
 Get-Module PrintManagement -ListAvailable
-Optional AI Integration
+```
+
+---
+
+# Optional AI Integration
 
 Install Ollama for local AI support:
 
 https://ollama.com
 
-Install Llama 3 model:
+Install the Llama 3 model:
 
+```bash
 ollama pull llama3
-Installation
-Clone Repository
+```
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash
 git clone https://github.com/yourusername/automated-printer-troubleshooter.git
-Run Script
+```
+
+## Run the Application
 
 Open PowerShell as Administrator:
 
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process
 .\PrinterTroubleshooter.ps1
-Application Functions
-Check Status
-Displays printer status
-Shows queue information
-Restart Spooler
-Restarts Windows Print Spooler service
-Clear Queue
-Removes stuck print jobs
-Connectivity Test
-Tests printer network communication
-Full System Diagnostic
+```
+
+Or launch using:
+
+```text
+RunPrinterTroubleshooter.vbs
+```
+
+---
+
+# Application Functions
+
+## Check Status
+
+* Displays printer status
+* Shows queue information
+
+## Restart Spooler
+
+* Restarts the Windows Print Spooler service
+
+## Clear Queue
+
+* Removes stuck print jobs
+
+## Connectivity Test
+
+* Tests printer network communication
+
+## Full System Diagnostic
 
 Runs all troubleshooting tasks automatically and sends issues to the AI assistant for analysis.
 
-AI Assistant
+---
+
+# AI Assistant
 
 The integrated AI assistant:
 
-Analyzes printer errors
-Suggests likely causes
-Provides recommended fixes
-Uses local offline AI processing
+* Analyzes printer errors
+* Suggests likely causes
+* Provides recommended fixes
+* Uses local offline AI processing
 
-Example AI output:
+## Example AI Output
 
+```text
 Summary:
 Printer is unreachable on the network.
 
@@ -91,27 +155,50 @@ Recommended Actions:
 1. Verify printer power/network connection
 2. Ping printer IP manually
 3. Restart printer and router
-Project Structure
+```
+
+---
+
+# Project Structure
+
+```text
 .
 ├── PrinterTroubleshooter.ps1
+├── RunPrinterTroubleshooter.vbs
 ├── README.md
 └── assets/
-Security Notes
-Runs locally only
-No cloud API usage
-AI processing remains offline through Ollama
-Requires administrator privileges for spooler operations
-Future Improvements
-Export diagnostic reports
-Auto driver repair
-SNMP printer monitoring
-Remote printer management
-Multi-printer diagnostics
-PDF report generation
-License
+```
+
+---
+
+# Security Notes
+
+* Runs locally only
+* No cloud API usage
+* AI processing remains offline through Ollama
+* Requires administrator privileges for spooler operations
+
+---
+
+# Future Improvements
+
+* Export diagnostic reports
+* Automatic driver repair
+* SNMP printer monitoring
+* Remote printer management
+* Multi-printer diagnostics
+* PDF report generation
+* Cloud AI integration
+* Event Viewer log analysis
+
+---
+
+# License
 
 MIT License
 
-Author
+---
 
-Developed for IT Helpdesk automation and printer troubleshooting workflows.
+# Author
+
+Developed for IT helpdesk automation and printer troubleshooting workflows.
