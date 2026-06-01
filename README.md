@@ -6,6 +6,12 @@ This tool provides an interactive GUI for IT helpdesk technicians and system adm
 
 ---
 
+# Application Preview
+
+<img width="1200" height="711" alt="image" src="https://github.com/user-attachments/assets/1f2a803a-8307-41e7-a8ce-f60bdb3f7d36" />
+
+---
+
 # Features
 
 * Automatic printer discovery
