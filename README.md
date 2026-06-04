@@ -94,7 +94,7 @@ ollama pull llama3
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/automated-printer-troubleshooter.git
+git clone https://github.com/jieonxei/automated-printer-troubleshooter.git
 ```
 
 ## Run the Application
